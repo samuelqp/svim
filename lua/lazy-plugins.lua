@@ -144,19 +144,13 @@ require('lazy').setup({
       options = {
         icons_enabled = false,
         theme = 'onedark',
-        component_separators = '|',
-        section_separators = '',
+        component_separators = { left = '', right = '|'},
+        section_separators = { left = '', right= ''},
+        ignore_focus = {},
+        always_divide_middle = true,
+        globalstatus = false,
       },
     },
-  },
-
-  {
-    -- Add indentation guides even on blank lines
-    'lukas-reineke/indent-blankline.nvim',
-    -- Enable `lukas-reineke/indent-blankline.nvim`
-    -- See `:help ibl`
-    main = 'ibl',
-    opts = {},
   },
 
   -- "gc" to comment visual regions/lines

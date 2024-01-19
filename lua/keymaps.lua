@@ -25,4 +25,32 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   pattern = '*',
 })
 
+vim.g.mapleader = ' '
+
+vim.keymap.set({'n', 'x'}, 'gy', '"+y') -- copy
+vim.keymap.set({'n', 'x'}, 'gp', '"+p') -- paste
+vim.keymap.set('n', '<leader>w', '<cmd>write<cr>')
+vim.keymap.set('n', '<leader>t', '<cmd>NvimTreeToggle<cr>')
+vim.keymap.set('n', '<leader>q', '<cmd>wq<cr>')
+
+vim.keymap.set("n", "<leader>bo", "<cmd>%bd|e#<cr>", {desc="Close all buffers but the current one"})
+
+-- The primeagen remaps --
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+vim.keymap.set("n", "J", "mzJ`z")
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
+
+vim.keymap.set("n", "j", "gj")
+vim.keymap.set("n", "k", "gk")
+
+vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>//g<left><left>")
+vim.keymap.set("i", "<c-l>", "<c-g>u<Esc>[sz=1<CR>A<c-g>u")
+vim.keymap.set("n", "<leader>b", "<cmd>ls<CR>:b<Space>")
+vim.keymap.set("n", "<leader>j", "zo")
+vim.keymap.set("n", "<leader>k", "zc")
 -- vim: ts=2 sts=2 sw=2 et
