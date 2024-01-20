@@ -30,7 +30,7 @@ vim.g.mapleader = ' '
 vim.keymap.set({'n', 'x'}, 'gy', '"+y') -- copy
 vim.keymap.set({'n', 'x'}, 'gp', '"+p') -- paste
 vim.keymap.set('n', '<leader>w', '<cmd>write<cr>')
-vim.keymap.set('n', '<leader>t', '<cmd>NvimTreeToggle<cr>')
+vim.keymap.set('n', '<leader>t', '<cmd>Neotree toggle<cr>')
 vim.keymap.set('n', '<leader>q', '<cmd>wq<cr>')
 
 vim.keymap.set("n", "<leader>bo", "<cmd>%bd|e#<cr>", {desc="Close all buffers but the current one"})
