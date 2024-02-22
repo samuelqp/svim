@@ -22,11 +22,13 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 vim.opt.wrap = false
 vim.opt.breakindent = true
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
+
+vim.opt.expandtab = true
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
 vim.opt.smartindent = true
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = false
+
 vim.wo.relativenumber = true
 vim.opt.updatetime = 50
 vim.g.conceallevel = 2
