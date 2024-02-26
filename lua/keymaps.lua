@@ -34,6 +34,8 @@ vim.keymap.set('n', '<leader>t', '<cmd>Neotree toggle<cr>')
 vim.keymap.set('n', '<leader>q', '<cmd>wq<cr>')
 
 vim.keymap.set("n", "<leader>bo", "<cmd>%bd|e#<cr>", {desc="Close all buffers but the current one"})
+vim.keymap.set("n", "<Tab>", "<cmd>bn<cr>", {desc="Next buffer"})
+vim.keymap.set("n", "<S-Tab>", "<cmd>bp<cr>", {desc="Previous buffer"})
 
 -- The primeagen remaps --
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")

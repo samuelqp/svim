@@ -22,7 +22,10 @@ require('lazy').setup({
     dependencies = {
       -- Automatically install LSPs to stdpath for neovim
       { 'williamboman/mason.nvim', config = true },
-      'williamboman/mason-lspconfig.nvim',
+      { 'williamboman/mason-lspconfig.nvim', opts = {
+        ensure_installed = {"lua_ls", "cssls", "html", "pylsp", "tsserver"},
+        },
+      },
 
       -- Useful status updates for LSP
       -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
@@ -149,6 +152,16 @@ require('lazy').setup({
         ignore_focus = {},
         always_divide_middle = true,
         globalstatus = false,
+      },
+      sections = {
+        lualine_c = {
+          {
+            "buffers",
+            symbols = {
+              modified = " ●",
+            },
+          },
+        },
       },
     },
   },
