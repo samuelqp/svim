@@ -23,15 +23,21 @@ cmp.setup {
       behavior = cmp.ConfirmBehavior.Replace,
       select = true,
     },
-    ["<Tab>"] = cmp.mapping(
-      function(fallback)
-        cmp_ultisnips_mappings.expand_or_jump_forwards(fallback)
+    ["<Tab>"] = cmp.mapping(function(fallback)
+        if cmp.visible() then
+          cmp.select_next_item()
+        else
+          cmp_ultisnips_mappings.expand_or_jump_forwards(fallback)
+        end
       end,
       { "i", "s", --[[ "c" (to enable the mapping in command mode) ]] }
     ),
-    ["<S-Tab>"] = cmp.mapping(
-      function(fallback)
-        cmp_ultisnips_mappings.jump_backwards(fallback)
+    ["<S-Tab>"] = cmp.mapping(function(fallback)
+        if cmp.visible() then
+          cmp.select_prev_item()
+        else
+          cmp_ultisnips_mappings.jump_backwards(fallback)
+        end
       end,
       { "i", "s", --[[ "c" (to enable the mapping in command mode) ]] }
     ),
