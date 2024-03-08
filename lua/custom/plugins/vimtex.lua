@@ -7,7 +7,11 @@ return{
     vim.g.vimtex_compiler_method = 'latexmk'
     vim.g.tex_flavor = 'latex'
 
-    vim.cmd([[let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex']])
+    vim.g.UltiSnipsExpandTrigger = '<tab>'
+    vim.g.UltiSnipsJumpForwardTrigger = '<tab>'
+    vim.g.UltiSnipsJumpBackwardTrigger = '<s-tab>'
+
+    vim.cmd([[vim.g.vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex']])
     vim.cmd([[filetype plugin indent on]])
     vim.cmd([[syntax enable]])
   end
