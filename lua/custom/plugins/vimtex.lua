@@ -14,6 +14,6 @@ return{
     vim.cmd([[let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex']])
     vim.cmd([[filetype plugin indent on]])
     vim.cmd([[syntax enable]])
-    vim.g.vimtex_quickfix_ignore_filters = "['LaTeX Font Warning']"
+    vim.g.vimtex_quickfix_ignore_filters = "['Font Warning']"
   end
 }
