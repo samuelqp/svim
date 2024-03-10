@@ -6,6 +6,7 @@
 
 ## Requirements
 Requires latest version of neovim (0.9.4 at time of writing).
+
 From [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim):
 - Basic utils: git, make, unzip, C Compiler (gcc), ripgrep
 - A Nerd Font: optional, provides various icons
