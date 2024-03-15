@@ -43,7 +43,7 @@ require('lazy').setup({
       -- Snippet Engine & its associated nvim-cmp source
       --'L3MON4D3/LuaSnip',
       --'saadparwaiz1/cmp_luasnip',
-      'mg979/ultisnips',
+      'SirVer/ultisnips',
       'quangnguyen30192/cmp-nvim-ultisnips',
       'honza/vim-snippets',
 
