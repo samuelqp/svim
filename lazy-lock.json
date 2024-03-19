@@ -30,6 +30,7 @@
   "vim-fugitive": { "branch": "master", "commit": "41beedabc7e948c787ea5696e04c3544c3674e23" },
   "vim-rhubarb": { "branch": "master", "commit": "ee69335de176d9325267b0fd2597a22901d927b1" },
   "vim-snippets": { "branch": "master", "commit": "393d980157b8149b3ff65a48bc4aae24dca9c846" },
+  "vim-surround": { "branch": "master", "commit": "3d188ed2113431cf8dac77be61b842acb64433d9" },
   "vimtex": { "branch": "master", "commit": "9ce62bbf7ea8f6bb232bbff5549cd7745a3fd918" },
   "which-key.nvim": { "branch": "main", "commit": "4433e5ec9a507e5097571ed55c02ea9658fb268a" }
 }
