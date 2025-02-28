@@ -3,7 +3,7 @@
 --  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
-vim.g.python3_host_prog = '/usr/bin/python3'
+vim.g.python3_host_prog = '/opt/anaconda3/bin/python'
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 require 'lazy-bootstrap'

@@ -23,7 +23,7 @@ require('lazy').setup({
       -- Automatically install LSPs to stdpath for neovim
       { 'williamboman/mason.nvim', config = true },
       { 'williamboman/mason-lspconfig.nvim', opts = {
-        ensure_installed = {"lua_ls", "cssls", "html", "pylsp", "tsserver"},
+        ensure_installed = {"lua_ls", "pylsp"},
         },
       },
 
@@ -57,7 +57,12 @@ require('lazy').setup({
   },
 
   -- Useful plugin to show you pending keybinds.
-  { 'folke/which-key.nvim', opts = {} },
+  {
+    'folke/which-key.nvim',
+    opts = {
+      notify = false,
+    },
+  },
   {
     -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',

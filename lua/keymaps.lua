@@ -56,3 +56,7 @@ vim.keymap.set("n", "<leader>b", "<cmd>ls<CR>:b<Space>")
 vim.keymap.set("n", "<leader>j", "zo")
 vim.keymap.set("n", "<leader>k", "zc")
 -- vim: ts=2 sts=2 sw=2 et
+--
+--
+-- run python code
+vim.keymap.set("n", "<leader>r", ":!python %<CR>")

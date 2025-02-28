@@ -9,10 +9,10 @@ vim.defer_fn(function()
       enable_rename = true,
       enable_close = true,
       enable_close_on_slash = true,
-      filetypes = { "html" , "xml" },
+      filetypes = {},
     },
 
-    ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'tsx', 'javascript', 'typescript', 'vimdoc', 'vim', 'bash' },
+    ensure_installed = {},
 
     -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
     auto_install = false,
